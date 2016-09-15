@@ -37,12 +37,13 @@ Test it here: http://MASTER:8080/api/v1/proxy/namespaces/default/services/redis-
 a. three-card-poker : It is a php based 
 b. three-card-poker-java : It is a java (spring boot) based app
 They can be deployed using three-card-poker-deployment.yaml and three-card-poker-service.yaml
-Test it here : 172.16.176.221:8080/api/v1/proxy/namespaces/default/services/three-card-poker/index.html
-172.16.176.221:8080/api/v1/proxy/namespaces/default/services/three-card-poker
+Test it here : MASTER:8080/api/v1/proxy/namespaces/default/services/three-card-poker/index.html
+
 
 
 Extra Info
-
+For simplicity, Kubernetes Master based Test URLs are used to access each service, however one should use NodePort or Loadbalancer approach to 
+access those services.
 heapster-svc.yaml and  heapster-rc.yaml can be used to deploy heapster in the cluster; heapster service is required to perform autoscaling
 For each deployment above autoscaling can be used if resource limit is defined in deployment yaml file (example in three-card-poker-deployment.yaml) 
 following kubectl commands can be used to for autoscaling
