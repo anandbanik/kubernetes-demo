@@ -54,3 +54,15 @@ Note: It is important to use correct version of heapster depending on your kuber
 kube-dash.yaml can be used to deploy kubernetes dashboard
 kube-dns-rc.yaml and kube-dns-svc.yaml can be used to deploy DNS service in cluster (although DNS service is not required for this demo)
 
+
+
+![demo-client-app](https://github.com/suyogbarve/kubernetes-demo/blob/master/demo-client-app.png?raw)
+![three-card-poker](https://github.com/suyogbarve/kubernetes-demo/blob/master/three-card-poker.png?raw)
+Note the small friendly bug image on three-card-poker app, this can be used as a usecase to show rolling updates once the bugfix is done.
+
+Finally, remember to start redis-app (database), before starting redis-a and redis-b. Spring boot container would take 60-70 seconds to start and
+clearly shows the superior behavior of golang based webservers.
+
+
+
+
