@@ -21,4 +21,4 @@ spec:
           command:
             - "/heapster"
             - --source=kubernetes.summary_api:http://172.16.164.6:8080?inClusterConfig=false&useServiceAccount=false&auth=
-            - --sink=elasticsearch:?nodes=http://logsearch.gls.rmnim.cloud.wal-mart.com:90&Index=K8SMetric
+            - --sink=log
