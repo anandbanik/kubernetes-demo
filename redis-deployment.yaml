@@ -11,4 +11,4 @@ spec:
     spec:
       containers:
       - name: redis
-        image: suyogbarve/redis:alpine
+        image: redis:alpine

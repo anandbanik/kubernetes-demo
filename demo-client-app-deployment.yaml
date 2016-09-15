@@ -13,7 +13,7 @@ spec:
       - image: suyogbarve/demo-client-app
         env:
         - name: MASTER_SERVICE
-          value: 10.65.226.67
+          value: 172.17.4.101
         imagePullPolicy: Always
         name: demo-client-app
         terminationMessagePath: /dev/termination-log
